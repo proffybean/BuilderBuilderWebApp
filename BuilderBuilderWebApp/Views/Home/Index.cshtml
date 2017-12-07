@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Class:</h2>
+<p>
+    <pre>
+public class MyClass
+{
+    int Age;
+    string FirstName;
+    DateTime Date;
+   </pre>
+</p>
+
+<form action="builder" method="post">
+
+    @Html.TextArea("entry", null, 15, 80, new { placeholder = "paste class here as shown above..." })
+
+    <br /><br />
+    <input type="submit" />
+</form>
+
